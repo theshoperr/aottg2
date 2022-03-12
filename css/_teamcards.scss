@@ -1,0 +1,56 @@
+.team{
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(../resources/AOTTG_2_Landscape_2_II.png);
+    background-size: cover;
+    width: 100%;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+#team h1{
+    font-family: jek5;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 10px;
+}
+
+#team .btn-team{
+    font-family: 'Jura', sans-serif;
+    left: 50%;
+    transform: translate(-50%, -0%);
+    margin-top: 20px;
+}
+
+.cardT {
+  background-color: rgb(34, 202, 214);
+  color: white;
+  padding: 1rem;
+  height: 5rem;
+}
+
+.cards {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 1rem;
+  margin-top: 50px;
+}
+
+/* Screen larger than 600px? 2 column */
+@media (min-width: 600px) {
+  .cards { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* Screen larger than 900px? 3 columns */
+@media (min-width: 900px) {
+  .cards { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (min-width: 1100px) {
+  .cards { grid-template-columns: repeat(4, 1fr); }
+}
+
+@media (min-width: 1300px) {
+  .cards { grid-template-columns: repeat(6, 1fr); }
+}
