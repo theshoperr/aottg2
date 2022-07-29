@@ -1,0 +1,36 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  transition: all .2s linear;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+@media (min-width: 300px) {
+  .title h1 {
+    font-size: 7em !important;
+  }
+}
+
+@media (min-width: 576px) {
+  .title h1 {
+    font-size: 8em !important;
+  }
+}
+
+@media (min-width: 300px) {
+  .dottedNavbar {
+    opacity: 0;
+  }
+}
+
+@media (min-width: 576px) {
+  .dottedNavbar {
+    opacity: 1;
+  }
+}
+

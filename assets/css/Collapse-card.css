@@ -1,0 +1,65 @@
+.mw-85 {
+  max-width: 85%!important;
+}
+
+.rotate {
+  -moz-transition: all .5s linear;
+  -webkit-transition: all .5s linear;
+  transition: all .5s linear;
+}
+
+.todo-card {
+  width: 400px;
+}
+
+.btn-add {
+  color: #fff;
+  background-color: var(--color-success);
+  border-color: var(--color-success);
+}
+
+.form-check-input.green:checked {
+  background-color: var(--color-success);
+  border-color: var(--color-success);
+}
+
+@media (min-width: 768px) {
+  .simple-slider .swiper-slide {
+    height: 500px;
+  }
+}
+
+@media (min-width: 300px) {
+  .Section-Title {
+    font-size: 50px;
+    padding-left: 12px;
+    margin-left: 0px;
+  }
+}
+
+@media (min-width: 576px) {
+  .Section-Title {
+    font-size: 60px;
+    padding-left: 12px;
+  }
+}
+
+@media (min-width: 768px) {
+  .Section-Title {
+    padding-left: 80px;
+    margin-left: 50px;
+  }
+}
+
+@media (min-width: 768px) {
+  .collapse-menu {
+    margin-left: -60px !important;
+  }
+}
+
+@media (min-width: 576px) {
+  .collapse-menu {
+    margin-left: 0px;
+  }
+}
+

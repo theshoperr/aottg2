@@ -1,0 +1,86 @@
+.dottedNavbar li:hover .dot span {
+  transform: translateX(0px);
+  opacity: 1;
+}
+
+.dottedNavbar li .dot span::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translate(70px, -50%);
+  border-left: 7px solid var(--bs-primary);
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  display: block;
+  opacity: 0;
+}
+
+.dottedNavbar li .dot span {
+  display: inline-block;
+  background: transparent;
+  letter-spacing: 1px;
+  padding: 5px 25px;
+  margin-right: 30px;
+  border-radius: 3px;
+  border: var(--bs-primary) solid 1px;
+  transform: translateX(30px);
+  opacity: 0;
+}
+
+.dottedNavbar li .dot {
+  color: var(--bs-primary);
+  display: block;
+  padding: 5px 0;
+}
+
+.dottedNavbar li {
+  /*width: 200px;*/
+  position: relative;
+  text-align: right;
+}
+
+.dottedNavbar {
+  position: fixed;
+  top: 50%;
+  right: 30px;
+  transform: translateY(-50%);
+  z-index: 1000;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dottedNavbar li .dot.active::after, .dottedNavbar li:hover .dot::after {
+  transform: translateY(-50%) scale(1);
+}
+
+.dottedNavbar li .dot.active::before, .dottedNavbar li:hover .dot::before {
+  border-color: var(--bs-primary);
+  background: var(--bs-primary);
+}
+
+.dottedNavbar li .dot::after {
+  height: 15px;
+  width: 15px;
+  border: 2px solid var(--bs-gray-600);
+  right: -5px;
+  transform: translateY(-50%) scale(0);
+}
+
+.dottedNavbar li .dot::before {
+  height: 5px;
+  width: 5px;
+  border: 2px solid var(--bs-gray-600);
+  right: 0;
+  transform: translateY(-50%);
+}
+
+.dottedNavbar li .dot::before, .dottedNavbar li .dot::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  border-radius: 50%;
+  display: block;
+  transition: .2s ease-out;
+}
+
