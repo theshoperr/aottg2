@@ -10,12 +10,12 @@ $section = document.getElementById('teams');
 $myGroup.on('show.bs.collapse','.collapse', function() {
     $myGroup.find('.collapse.show').collapse('hide');
     $clicked = true;
-    $section.style.background = 'linear-gradient(rgba(0,0,0,0.34), rgba(0,0,0,0.24) 99%), url("Menu-cut-out.png") left / contain no-repeat, linear-gradient(rgba(0,0,0,0.58), rgba(0,0,0,0.6) 99%), url("4.jpg") center / cover no-repeat'; 
+    $section.style.background = 'linear-gradient(rgba(0,0,0,0.34), rgba(0,0,0,0.24) 99%), url("../img/Menu-cut-out.png") left / contain no-repeat, linear-gradient(rgba(0,0,0,0.58), rgba(0,0,0,0.6) 99%), url("../img/4.jpg") center / cover no-repeat'; 
 });
 
 $myGroup.on('hide.bs.collapse','.collapse', function() {
     $clicked = false;
-    $section.style.background = 'linear-gradient(rgba(0,0,0,0.34), rgba(0,0,0,0.24) 99%), url("Menu-cut-out.png") left / auto no-repeat, linear-gradient(rgba(0,0,0,0.58), rgba(0,0,0,0.6) 99%), url("4.jpg") center / cover no-repeat';
+    $section.style.background = 'linear-gradient(rgba(0,0,0,0.34), rgba(0,0,0,0.24) 99%), url("../img/Menu-cut-out.png") left / auto no-repeat, linear-gradient(rgba(0,0,0,0.58), rgba(0,0,0,0.6) 99%), url("../img/4.jpg") center / cover no-repeat';
 });
 
 $CollapseBtn.on('click', function() {
@@ -25,7 +25,7 @@ $CollapseBtn.on('click', function() {
     else { $CurrentBtn = this; $LastBtn = null; }
     
     if($clicked) {
-        $CurrentBtn.style.background = 'url("Red-selection-bigger.png") center / contain no-repeat';
+        $CurrentBtn.style.background = 'url("../img/Red-selection-bigger.png") center / contain no-repeat';
         $CurrentBtn.style.color = 'var(--bs-primary)';
     }
     else {
