@@ -20,33 +20,34 @@
     <link rel="stylesheet" href="assets/css/Collapse-card.css">
     <link rel="stylesheet" href="assets/css/dottedNavbar.css">
     <link rel="stylesheet" href="assets/css/Feature-Section-MD.css">
+    <link rel="stylesheet" href="assets/css/Gallery-Slider.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.8/swiper-bundle.min.css">
-    <link rel="stylesheet" href="assets/css/menu-collapse-ultimate.css">
-    <link rel="stylesheet" href="assets/css/Navbar-Centered-Links-icons.css">
-    <link rel="stylesheet" href="assets/css/Simple-Slider-Simple-Slider.css">
+    <link rel="stylesheet" href="assets/css/menu-collapse.css">
+    <link rel="stylesheet" href="assets/css/Navbar.css">
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/Team-images.css">
+    <link rel="stylesheet" href="assets/css/WhatsNew-Cards.css">
 </head>
 
 <body style="--bs-body-bg: #2C2C2C;--bs-primary: #fff;--bs-primary-rgb: 255,255,255;--bs-secondary: rgb(34,202,214);--bs-secondary-rgb: 34,202,214;background: linear-gradient(rgba(0,0,0,0.31) 0%, rgba(0,0,0,0)), url(&quot;assets/img/AOTTG_2_Promotional_Art_Landscape_III_1.png&quot;) no-repeat, #000000;background-size: auto, contain, auto;--bs-dark: #292929;--bs-dark-rgb: 41,41,41;--bs-danger: #652e40;--bs-danger-rgb: 101,46,64;">
     <div class="user-select-none" style="background: var(--bs-dark);">
-        <nav class="navbar navbar-light navbar-expand-md sticky-top py-3" style="height: 50px;background: rgba(0,0,0,0.44);">
-            <div class="container-fluid"><a class="navbar-brand d-flex align-items-center" href="index.html" style="padding-top: 0px;"><span class="bs-icon-sm bs-icon-rounded bs-icon-primary d-flex justify-content-center align-items-center me-2 bs-icon"><img src="assets/img/logo.png" width="30px"></span></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-3" style="color: var(--bs-white);padding-top: 0px;"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span></button>
-                <div class="collapse navbar-collapse" id="navcol-3">
+        <nav class="navbar navbar-light navbar-expand-md sticky-top py-3 barra" style="background: rgba(0,0,0,0.44);">
+            <div class="container-fluid"><a class="navbar-brand d-flex align-items-center" href="index.html" style="padding-top: 0px;"><span class="bs-icon-sm bs-icon-rounded bs-icon-primary d-flex justify-content-center align-items-center me-2 bs-icon"><img src="assets/img/logo.png" width="30px"></span></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-3" id="toggler" style="color: var(--bs-white);padding-top: 0px;"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span></button>
+                <div class="collapse navbar-collapse" id="navcol-3" style="background: black;">
                     <ul class="navbar-nav mx-auto barra-nav" style="font-family: 'JEK 5';color: var(--bs-white);font-size: 20px;">
                         <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="https://aottg2.net" target="_blank">Documentation</a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://aottg2.net/api/index.html" target="_blank">Documentation</a></li>
                         <li class="nav-item"><a class="nav-link" href="https://discord.gg/GhbNbvU" target="_blank">Discord</a></li>
                         <li class="nav-item"><a class="nav-link blue" href="https://aottg2-ids.azurewebsites.net/Account/Login" target="_blank">Account</a></li>
                     </ul>
-                </div>
+                </div><a class="navbar-brand d-flex justify-content-center align-items-center justify-content-xxl-center align-items-xxl-center" id="pbtn" href="https://www.patreon.com/aottg2" style="margin-right: -10px;padding-top: 0px;" target="_blank"><span class="bs-icon-md bs-icon-rounded bs-icon-primary d-flex justify-content-center align-items-center me-2 bs-icon" style="width: 168px;background: var(--bs-danger);color: var(--bs-primary);font-family: 'JEK 5';font-size: 18px;height: 36px;"><i class="fab fa-patreon"></i>&nbsp;Make a donation</span></a>
             </div>
         </nav>
     </div>
     <ul class="nav nav-tabs flex-column dottedNavbar" style="border-style: none;">
-        <li class="nav-item" style="border-width: 0px;border-style: none;"><a class="nav-link active dot" href="#home" data-scroll="home" style="border-width: 0px;border-style: none;"><span style="font-family: 'Intensa Fuente';">Home</span></a></li>
-        <li class="nav-item"><a class="nav-link dot" href="#features" data-scroll="features" style="border-width: 0px;border-style: none;"><span style="font-family: 'Intensa Fuente';">Features</span></a></li>
+        <li class="nav-item" style="border-width: 0px;border-style: none;"><a class="nav-link active dot" href="#home" data-scroll="home" style="border-width: 0px;border-style: none;"><span style="font-family: 'Intensa Fuente';">Download</span></a></li>
+        <li class="nav-item"><a class="nav-link dot" href="#features" data-scroll="features" style="border-width: 0px;border-style: none;"><span style="font-family: 'Intensa Fuente';">What's new</span></a></li>
         <li class="nav-item"><a class="nav-link dot" href="#latest" data-scroll="latest" style="border-width: 0px;border-style: none;"><span style="font-family: 'Intensa Fuente';">Latest Update</span></a></li>
     </ul>
     <section id="home" class="user-select-none sec home-sec" style="background: linear-gradient(rgba(0,0,0,0), #000000 100%), url(&quot;assets/img/Menu-cut-out.png&quot;) left / auto no-repeat;padding-bottom: calc(30% + 100px);">
@@ -58,39 +59,63 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-12 d-flex d-md-flex justify-content-center align-items-center justify-content-md-center align-items-md-center"><button class="btn btn-secondary btn-lg" type="button" style="background: transparent;border-radius: 0;color: var(--bs-primary);font-family: 'JEK 5';border: 1px solid var(--bs-primary) ;">Coming soon</button></div>
+                <div class="col-md-12 d-flex d-md-flex justify-content-center align-items-center justify-content-md-center align-items-md-center"><a class="btn btn-secondary btn-lg" role="button" style="background: transparent;border-radius: 0;color: var(--bs-primary);font-family: 'JEK 5';border: 1px solid var(--bs-primary) ;" href="https://github.com/AoTTG-2/AoTTG-2/blob/development/CONTRIBUTING.md" target="_blank">Join the project!</a></div>
             </div>
         </div>
     </section>
-    <section id="features" class="user-select-none sec" style="background: #000;">
-        <h1 style="font-family: 'JEK 5';color: var(--bs-primary);text-align: center;background: url(&quot;assets/img/Red-selection-bigger.png&quot;) center / contain no-repeat;font-size: 4em;">Features</h1>
-        <div class="container">
-            <div class="row row-fitur">
-                <div class="col-sm-4 col-md-4 waves-effect kolom-a">
-                    <div class="fitur-a"><img src="assets/img/AOTTG_2_Landscape_2_II.png" width="250px"></div>
-                    <div class="separator-fitur" style="background: var(--bs-secondary);"></div>
-                    <div>
-                        <h4 class="heading-fitur" style="font-family: 'JEK 5';color: var(--bs-secondary);">Marketplace</h4>
-                        <p class="paragraf-fitur" style="font-family: 'JEK 5';color: var(--bs-primary);">In-game and in-browser marketplace where you can find all assets related to Aottg 2, from skins, to maps, here is the place to find it all.</p>
-                    </div>
-                </div>
-                <div class="col-sm-4 col-md-4 waves-effect kolom-b">
-                    <div class="fitur-a"><img src="assets/img/AOTTG_2_Landscape_2_II.png" width="250px"></div>
-                    <div class="separator-fitur"></div>
-                    <div>
-                        <h4 class="heading-fitur">Character Customization</h4>
-                        <p class="paragraf-fitur">Customize your character in-game by accessing the "character customization" menu, where you can distribute your skill points, change hair style, capes and others. Create your custom presets and use them everywhere you want. You are free to create what you want. If you want more customization options, head over to the Marketplace, where you can download skins made by the community.</p>
-                    </div>
-                </div>
-                <div class="col-sm-4 col-md-4 waves-effect kolom-c">
-                    <div class="fitur-a"><img src="assets/img/AOTTG_2_Landscape_2_II.png" width="250px"></div>
-                    <div class="separator-fitur"></div>
-                    <div>
-                        <h4 class="heading-fitur">HUD Editor</h4>
-                        <p class="paragraf-fitur">On Aottg 2 you will now have the option to customize your in-game hud. You can move, make elements smaller or bigger, hide or show and more! You can now have a better experience while playing by making the game fit your needs. Come check out the feature inside the game!</p>
-                    </div>
-                </div>
-            </div>
+    <section id="features" class="user-select-none sec" style="background: #000;padding-top: 50px;padding-bottom: 200px;">
+        <h1 style="font-family: 'JEK 5';color: var(--bs-primary);text-align: center;background: url(&quot;assets/img/Red-selection-bigger.png&quot;) center / contain no-repeat;font-size: 4em;">What's New</h1><div class="container">
+  <div class="row">
+    <div class="col-md-4">
+  <div class="blog-card blog-card-blog">
+    <div class="blog-card-image">
+        <img class="img" src="assets/img/AHSS%20Animations.gif">
+        <div class="ripple-cont"></div>
+    </div>
+    <div class="blog-table">
+        <h4 class="blog-card-caption">
+            <a href="#">New visuals</a>
+        </h4>
+        <p class="blog-card-description">AoTTG 2 has music with exclusive songs, new animations and SFX for the character and titans.<br><br><br></p>
+    </div>
+</div>
+</div>
+    
+<div class="col-md-4">
+  <div class="blog-card blog-card-blog">
+    <div class="blog-card-image">
+        <img class="img" src="assets/img/Customizing.gif">
+        <div class="ripple-cont"></div>
+    </div>
+    <div class="blog-table">
+        <h4 class="blog-card-caption">
+            <a href="#">From UI to Characters: Customization</a>
+        </h4>
+        <p class="blog-card-description">One of the biggest features of AoTTG 2 is the huge customization that is possible within the game. From how your in-game hud looks like, to the color of the textures from your skin, there are endless options to choose from.</p>
+    </div>
+</div>
+</div>
+    
+    <div class="col-md-4">
+  <div class="blog-card blog-card-blog">
+    <div class="blog-card-image">
+        <img class="img" src="assets/img/The%20Forest.png">
+        <div class="ripple-cont"></div>
+    </div>
+    <div class="blog-table">
+        <h4 class="blog-card-caption">
+            <a href="#">New and remodeled maps</a>
+        </h4>
+        <p class="blog-card-description">With the addition of many new maps, we also couldn't forget about the old ones, so the classic maps from AoTTG 1 have been remodeled to match the new looks of AoTTG 2!</p>
+    </div>
+</div>
+</div>
+  </div>
+</div>
+    </section>
+    <section>
+        <div class="d-flex d-xxl-flex justify-content-center align-items-center justify-content-xxl-center align-items-xxl-center" style="height: 500px;background: linear-gradient(rgba(0,0,0,0.63), rgba(0,0,0,0.63)), url(&quot;assets/img/Trailers.gif&quot;) center / cover no-repeat;">
+            <h1 class="display-1" data-bss-hover-animate="pulse" id="Join" style="font-family: 'JEK 5';color: var(--bs-primary);"><a href="https://discord.com/invite/GhbNbvU" style="color: var(--bs-primary);" target="_blank">Join the community!</a></h1>
         </div>
     </section>
     <section id="latest" class="user-select-none sec" style="padding-top: 150px;padding-bottom: 50px;">
@@ -113,7 +138,7 @@
                     <ul class="list-unstyled">
                         <li><a class="link-secondary" href="#">Marketplace</a></li>
                         <li><a class="link-light" href="https://aottg2-ids.azurewebsites.net/Account/Login" target="_blank">Account</a></li>
-                        <li><a class="link-light" href="https://aottg2.net" target="_blank">Documentation</a></li>
+                        <li><a class="link-light" href="https://aottg2.net/api/index.html" target="_blank">Documentation</a></li>
                         <li><a class="link-light" href="https://github.com/AoTTG-2/AoTTG-2-API" target="_blank">API</a></li>
                     </ul>
                 </div>
@@ -137,12 +162,12 @@
                 </div>
                 <div class="col-lg-3 text-center text-lg-start d-flex flex-column align-items-center order-first align-items-lg-start order-lg-last item social" style="font-family: 'JEK 5';">
                     <div class="fw-bold d-flex align-items-center mb-2"><span class="bs-icon-sm bs-icon-rounded bs-icon-primary d-flex justify-content-center align-items-center bs-icon me-2"><img src="assets/img/logo.png" width="30px"></span><span style="color: var(--bs-secondary);">AoTTG 2</span></div>
-                    <p class="text-muted copyright">An Attack on Titan Tribute Game.</p>
+                    <p class="text-muted copyright">An Attack on Titan Tribute Game.<br></p>
                 </div>
             </div>
             <hr>
             <div class="d-flex justify-content-between align-items-center pt-3" style="font-family: 'JEK 5';">
-                <p class="mb-0" style="font-family: 'JEK 5';">Copyright © 2022 AoTTG 2</p>
+                <p class="mb-0" style="font-family: 'JEK 5';color: var(--bs-primary);">Copyright © 2022 AoTTG2.net<br></p>
                 <ul class="list-inline mb-0">
                     <li class="list-inline-item"><a href="https://www.facebook.com/AoTTG2/" style="color: var(--bs-primary);" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-facebook">
                                 <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"></path>
@@ -167,6 +192,8 @@
     <script src="assets/js/Collapse-Handler.js"></script>
     <script src="assets/js/dottedNavbar%20Function.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.8/swiper-bundle.min.js"></script>
+    <script src="assets/js/Join-Community.js"></script>
+    <script src="assets/js/Navbar%20Logic.js"></script>
     <script src="assets/js/Simple-Slider.js"></script>
 </body>
 

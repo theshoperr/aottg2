@@ -20,27 +20,28 @@
     <link rel="stylesheet" href="assets/css/Collapse-card.css">
     <link rel="stylesheet" href="assets/css/dottedNavbar.css">
     <link rel="stylesheet" href="assets/css/Feature-Section-MD.css">
+    <link rel="stylesheet" href="assets/css/Gallery-Slider.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.8/swiper-bundle.min.css">
-    <link rel="stylesheet" href="assets/css/menu-collapse-ultimate.css">
-    <link rel="stylesheet" href="assets/css/Navbar-Centered-Links-icons.css">
-    <link rel="stylesheet" href="assets/css/Simple-Slider-Simple-Slider.css">
+    <link rel="stylesheet" href="assets/css/menu-collapse.css">
+    <link rel="stylesheet" href="assets/css/Navbar.css">
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/Team-images.css">
+    <link rel="stylesheet" href="assets/css/WhatsNew-Cards.css">
 </head>
 
 <body style="--bs-primary: #fff;--bs-primary-rgb: 255,255,255;--bs-secondary: rgb(34,202,214);--bs-secondary-rgb: 34,202,214;--bs-danger: #652e40;--bs-danger-rgb: 101,46,64;--bs-dark: #292929;--bs-dark-rgb: 41,41,41;--bs-body-bg: #2C2C2C;">
     <div class="user-select-none" style="background: var(--bs-dark);">
-        <nav class="navbar navbar-light navbar-expand-md sticky-top py-3" style="height: 50px;background: rgba(0,0,0,0.44);">
-            <div class="container-fluid"><a class="navbar-brand d-flex align-items-center" href="index.html" style="padding-top: 0px;"><span class="bs-icon-sm bs-icon-rounded bs-icon-primary d-flex justify-content-center align-items-center me-2 bs-icon"><img src="assets/img/logo.png" width="30px"></span></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-3" style="color: var(--bs-white);padding-top: 0px;"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span></button>
-                <div class="collapse navbar-collapse" id="navcol-3">
+        <nav class="navbar navbar-light navbar-expand-md sticky-top py-3 barra" style="background: rgba(0,0,0,0.44);">
+            <div class="container-fluid"><a class="navbar-brand d-flex align-items-center" href="index.html" style="padding-top: 0px;"><span class="bs-icon-sm bs-icon-rounded bs-icon-primary d-flex justify-content-center align-items-center me-2 bs-icon"><img src="assets/img/logo.png" width="30px"></span></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-3" id="toggler" style="color: var(--bs-white);padding-top: 0px;"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span></button>
+                <div class="collapse navbar-collapse" id="navcol-3" style="background: black;">
                     <ul class="navbar-nav mx-auto barra-nav" style="font-family: 'JEK 5';color: var(--bs-white);font-size: 20px;">
                         <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="https://aottg2.net" target="_blank">Documentation</a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://aottg2.net/api/index.html" target="_blank">Documentation</a></li>
                         <li class="nav-item"><a class="nav-link" href="https://discord.gg/GhbNbvU" target="_blank">Discord</a></li>
                         <li class="nav-item"><a class="nav-link blue" href="https://aottg2-ids.azurewebsites.net/Account/Login" target="_blank">Account</a></li>
                     </ul>
-                </div>
+                </div><a class="navbar-brand d-flex justify-content-center align-items-center justify-content-xxl-center align-items-xxl-center" id="pbtn" href="https://www.patreon.com/aottg2" style="margin-right: -10px;padding-top: 0px;" target="_blank"><span class="bs-icon-md bs-icon-rounded bs-icon-primary d-flex justify-content-center align-items-center me-2 bs-icon" style="width: 168px;background: var(--bs-danger);color: var(--bs-primary);font-family: 'JEK 5';font-size: 18px;height: 36px;"><i class="fab fa-patreon"></i>&nbsp;Make a donation</span></a>
             </div>
         </nav>
     </div>
@@ -48,7 +49,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h1 class="display-1" style="color: var(--bs-primary);font-family: 'JEK 5';background: url(&quot;assets/img/Red-selection-bigger.png&quot;) left / contain no-repeat;padding-left: 45px;">About</h1>
+                    <h1 class="display-1 d-flex d-xxl-flex justify-content-start justify-content-xxl-start" style="color: var(--bs-primary);font-family: 'JEK 5';background: url(&quot;assets/img/Red-selection-bigger.png&quot;) left / contain no-repeat;padding-left: 45px;">About</h1>
                 </div>
             </div>
             <div class="row" style="padding-top: 50px;padding-bottom: 50px;">
@@ -69,7 +70,7 @@
                     <ul class="list-unstyled">
                         <li><a class="link-secondary" href="#">Marketplace</a></li>
                         <li><a class="link-light" href="https://aottg2-ids.azurewebsites.net/Account/Login" target="_blank">Account</a></li>
-                        <li><a class="link-light" href="https://aottg2.net" target="_blank">Documentation</a></li>
+                        <li><a class="link-light" href="https://aottg2.net/api/index.html" target="_blank">Documentation</a></li>
                         <li><a class="link-light" href="https://github.com/AoTTG-2/AoTTG-2-API" target="_blank">API</a></li>
                     </ul>
                 </div>
@@ -93,12 +94,12 @@
                 </div>
                 <div class="col-lg-3 text-center text-lg-start d-flex flex-column align-items-center order-first align-items-lg-start order-lg-last item social" style="font-family: 'JEK 5';">
                     <div class="fw-bold d-flex align-items-center mb-2"><span class="bs-icon-sm bs-icon-rounded bs-icon-primary d-flex justify-content-center align-items-center bs-icon me-2"><img src="assets/img/logo.png" width="30px"></span><span style="color: var(--bs-secondary);">AoTTG 2</span></div>
-                    <p class="text-muted copyright">An Attack on Titan Tribute Game.</p>
+                    <p class="text-muted copyright">An Attack on Titan Tribute Game.<br></p>
                 </div>
             </div>
             <hr>
             <div class="d-flex justify-content-between align-items-center pt-3" style="font-family: 'JEK 5';">
-                <p class="mb-0" style="font-family: 'JEK 5';">Copyright © 2022 AoTTG 2</p>
+                <p class="mb-0" style="font-family: 'JEK 5';color: var(--bs-primary);">Copyright © 2022 AoTTG2.net<br></p>
                 <ul class="list-inline mb-0">
                     <li class="list-inline-item"><a href="https://www.facebook.com/AoTTG2/" style="color: var(--bs-primary);" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-facebook">
                                 <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"></path>
@@ -123,6 +124,8 @@
     <script src="assets/js/Collapse-Handler.js"></script>
     <script src="assets/js/dottedNavbar%20Function.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.8/swiper-bundle.min.js"></script>
+    <script src="assets/js/Join-Community.js"></script>
+    <script src="assets/js/Navbar%20Logic.js"></script>
     <script src="assets/js/Simple-Slider.js"></script>
 </body>
 
