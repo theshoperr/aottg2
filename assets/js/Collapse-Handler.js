@@ -38,3 +38,28 @@ $CollapseBtn.on('click', function() {
             $LastBtn.style.color = 'var(--bs-dark)';
         }
 });
+
+$CollapseBtn.on('mouseenter', function(){
+    
+    if ($CurrentBtn == null) $CurrentBtn = this;
+    else if($CurrentBtn != this) { $LastBtn = $CurrentBtn; $CurrentBtn = this; }
+    else { $CurrentBtn = this; $LastBtn = null; }
+    
+    if(!$clicked) {
+        $CurrentBtn.style.background = 'url("assets/img/Red-selection-bigger.png") center / contain no-repeat';
+        $CurrentBtn.style.color = 'var(--bs-primary)';
+    }
+    
+});
+
+$CollapseBtn.on('mouseleave', function(){
+    if ($CurrentBtn == null) $CurrentBtn = this;
+    else if($CurrentBtn != this) { $LastBtn = $CurrentBtn; $CurrentBtn = this; }
+    else { $CurrentBtn = this; $LastBtn = null; }
+    
+    if(!$clicked) {
+        $CurrentBtn.style.background = 'none';
+        $CurrentBtn.style.color = 'var(--bs-dark)';
+    }
+    
+});
