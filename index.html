@@ -17,12 +17,14 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,700">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700">
     <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/css/Audio-Player-Style.css">
     <link rel="stylesheet" href="assets/css/Collapse-card.css">
     <link rel="stylesheet" href="assets/css/dottedNavbar.css">
     <link rel="stylesheet" href="assets/css/Feature-Section-MD.css">
     <link rel="stylesheet" href="assets/css/Gallery-Slider.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.8/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/Icone-SVG.css">
     <link rel="stylesheet" href="assets/css/menu-collapse.css">
     <link rel="stylesheet" href="assets/css/Navbar.css">
     <link rel="stylesheet" href="assets/css/styles.css">
@@ -41,15 +43,31 @@
                         <li class="nav-item"><a class="nav-link" href="https://discord.gg/GhbNbvU" target="_blank">Discord</a></li>
                         <li class="nav-item"><a class="nav-link blue" href="https://aottg2-ids.azurewebsites.net/Account/Login" target="_blank">Account</a></li>
                     </ul>
-                </div><a class="navbar-brand d-flex justify-content-center align-items-center justify-content-xxl-center align-items-xxl-center" id="pbtn" href="https://www.patreon.com/aottg2" style="margin-right: -10px;padding-top: 0px;" target="_blank"><span class="bs-icon-md bs-icon-rounded bs-icon-primary d-flex justify-content-center align-items-center me-2 bs-icon" style="width: 168px;background: var(--bs-danger);color: var(--bs-primary);font-family: 'JEK 5';font-size: 18px;height: 36px;"><i class="fab fa-patreon"></i>&nbsp;Make a donation</span></a>
+                </div><a class="navbar-brand d-flex justify-content-center align-items-center justify-content-xxl-center align-items-xxl-center" id="pbtn" href="https://www.patreon.com/aottg2" style="margin-right: -10px;padding-top: 0px;" target="_blank"><span class="bs-icon-md bs-icon-rounded bs-icon-primary d-flex justify-content-center align-items-center me-2 bs-icon" style="width: 168px;background: var(--bs-danger);color: var(--bs-primary);font-family: 'JEK 5';font-size: 18px;height: 36px;"><i class="fab fa-patreon"></i>&nbsp;help the servers</span></a>
             </div>
         </nav>
     </div>
     <ul class="nav nav-tabs flex-column dottedNavbar" style="border-style: none;">
-        <li class="nav-item" style="border-width: 0px;border-style: none;"><a class="nav-link active dot" href="#home" data-scroll="home" style="border-width: 0px;border-style: none;"><span style="font-family: 'Intensa Fuente';">Download</span></a></li>
+        <li class="nav-item" style="border-width: 0px;border-style: none;"><a class="nav-link active dot" href="#home" data-scroll="home" style="border-width: 0px;border-style: none;"><span style="font-family: 'Intensa Fuente';">Join the project</span></a></li>
         <li class="nav-item"><a class="nav-link dot" href="#features" data-scroll="features" style="border-width: 0px;border-style: none;"><span style="font-family: 'Intensa Fuente';">What's new</span></a></li>
+        <li class="nav-item"><a class="nav-link dot" href="#soundtrack" data-scroll="soundtrack" style="border-width: 0px;border-style: none;"><span style="font-family: 'Intensa Fuente';">Soundtrack</span></a></li>
         <li class="nav-item"><a class="nav-link dot" href="#latest" data-scroll="latest" style="border-width: 0px;border-style: none;"><span style="font-family: 'Intensa Fuente';">Latest Update</span></a></li>
     </ul>
+    <div class="audio-player user-select-none">
+        <div style="width: 216px;height: 148px;position: fixed;background: rgba(0,0,0,0.65);"></div><img src="assets/img/Audio_player_cover.png" width="216" height="148" style="border-width: 0px;">
+        <p style="position: inherit;color: var(--bs-primary);font-family: 'JEK 5';margin-bottom: 120px;margin-right: 5px;font-size: 13px;">AoTTG 2 Original Soundtrack<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" class="text-primary close-player" style="/*position: inherit;*//*margin-bottom: 126px;*/margin-left: 29px;">
+                <path d="M6.2253 4.81108C5.83477 4.42056 5.20161 4.42056 4.81108 4.81108C4.42056 5.20161 4.42056 5.83477 4.81108 6.2253L10.5858 12L4.81114 17.7747C4.42062 18.1652 4.42062 18.7984 4.81114 19.1889C5.20167 19.5794 5.83483 19.5794 6.22535 19.1889L12 13.4142L17.7747 19.1889C18.1652 19.5794 18.7984 19.5794 19.1889 19.1889C19.5794 18.7984 19.5794 18.1652 19.1889 17.7747L13.4142 12L19.189 6.2253C19.5795 5.83477 19.5795 5.20161 19.189 4.81108C18.7985 4.42056 18.1653 4.42056 17.7748 4.81108L12 10.5858L6.2253 4.81108Z" fill="currentColor"></path>
+            </svg></p><audio preload="auto" loop="">
+            <source src="https://theshoperr.github.io/aottg2/assets/audio/AoTTG_2_Soundtrack_Preview.ogg" type="audio/ogg">
+        </audio>
+        <div class="controls song-player"><button class="btn btn-dark player-button" type="button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="var(--player-button-width)" height="var(--player-button-width)" fill="var(--bs-primary)">
+                    <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
+                    <path d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zM7 8a1 1 0 012 0v4a1 1 0 11-2 0V8zm5-1a1 1 0 00-1 1v4a1 1 0 102 0V8a1 1 0 00-1-1z" clip-rule="evenodd" fill-rule="evenodd"></path>
+                </svg></button><input class="form-range timeline" type="range" max="100" value="0"><button class="btn btn-dark sound-button" type="button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="var(--sound-button-width)" height="var(--sound-button-width)" fill="var(--bs-primary)">
+                    <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
+                    <path d="M9.383 3.076A1 1 0 0110 4v12a1 1 0 01-1.707.707L4.586 13H2a1 1 0 01-1-1V8a1 1 0 011-1h2.586l3.707-3.707a1 1 0 011.09-.217zM14.657 2.929a1 1 0 011.414 0A9.972 9.972 0 0119 10a9.972 9.972 0 01-2.929 7.071 1 1 0 01-1.414-1.414A7.971 7.971 0 0017 10c0-2.21-.894-4.208-2.343-5.657a1 1 0 010-1.414zm-2.829 2.828a1 1 0 011.415 0A5.983 5.983 0 0115 10a5.984 5.984 0 01-1.757 4.243 1 1 0 01-1.415-1.415A3.984 3.984 0 0013 10a3.983 3.983 0 00-1.172-2.828 1 1 0 010-1.415z" clip-rule="evenodd" fill-rule="evenodd"></path>
+                </svg></button><input class="form-range volume" type="range" max="100" value="50"></div>
+    </div>
     <section id="home" class="user-select-none sec home-sec" style="background: linear-gradient(rgba(0,0,0,0), #000000 100%), url(&quot;assets/img/Menu-cut-out.png&quot;) left / auto no-repeat;padding-bottom: calc(30% + 100px);">
         <div class="container" style="padding-top: 100px;">
             <div class="row">
@@ -69,14 +87,14 @@
     <div class="col-md-4">
   <div class="blog-card blog-card-blog">
     <div class="blog-card-image">
-        <img class="img" src="assets/img/AHSS%20Animations.gif">
+        <img class="img" src="assets/img/337921099-1-30080.gif">
         <div class="ripple-cont"></div>
     </div>
     <div class="blog-table">
         <h4 class="blog-card-caption">
             <a href="#">New visuals</a>
         </h4>
-        <p class="blog-card-description">AoTTG 2 has music with exclusive songs, new animations and SFX for the character and titans.<br><br><br></p>
+        <p class="blog-card-description">AoTTG 2 has music with exclusive songs, new animations, SFX and new models for characters and titans.<br><br><br></p>
     </div>
 </div>
 </div>
@@ -113,12 +131,30 @@
   </div>
 </div>
     </section>
-    <section>
+    <section class="user-select-none">
         <div class="d-flex d-xxl-flex justify-content-center align-items-center justify-content-xxl-center align-items-xxl-center" style="height: 500px;background: linear-gradient(rgba(0,0,0,0.63), rgba(0,0,0,0.63)), url(&quot;assets/img/Trailers.gif&quot;) center / cover no-repeat;">
             <h1 class="display-1" data-bss-hover-animate="pulse" id="Join" style="font-family: 'JEK 5';color: var(--bs-primary);"><a href="https://discord.com/invite/GhbNbvU" style="color: var(--bs-primary);" target="_blank">Join the community!</a></h1>
         </div>
     </section>
-    <section id="latest" class="user-select-none sec" style="padding-top: 150px;padding-bottom: 50px;">
+    <section id="soundtrack" class="user-select-none sec" style="padding-top: 100px;">
+        <h1 style="background: url(&quot;assets/img/Red-selection-bigger.png&quot;) center / contain no-repeat;color: var(--bs-primary);font-family: 'JEK 5';font-size: 4em;margin-bottom: 100px;">Soundtrack</h1>
+        <section>
+            <div class="container">
+                <div class="border rounded border-0 d-flex flex-column justify-content-center align-items-center" style="height: 500px;">
+                    <div class="row">
+                        <div class="col d-flex d-xxl-flex justify-content-center align-items-center justify-content-xxl-center align-items-xxl-center"><img src="assets/img/Audio_player_cover.png" width="380px" height="250px"></div>
+                        <div class="col-md-10 col-xl-8 text-start text-sm-center text-md-start d-flex d-sm-flex d-md-flex justify-content-center align-items-center mx-auto justify-content-md-start align-items-md-center justify-content-xl-center justify-content-xxl-center align-items-xxl-center">
+                            <div>
+                                <h1 class="text-uppercase fw-bold text-center text-sm-center text-md-start mb-3" style="font-family: 'JEK 5';color: var(--bs-secondary);">AoTTG 2 Soundtrack Preview Collection</h1>
+                                <p class="mb-4" style="color: var(--bs-primary);font-family: 'JEK 5';">The official soundtrack collection for AoTTG 2. A bundle of songs that play while you are in the lobby, engage in battle, fly around the map or just playing your own maps.</p><button class="btn btn-dark fs-5 me-2 py-2 px-4 open-player" type="button" style="font-family: 'JEK 5';background: var(--bs-dark);border-style: none;">Native player</button><a class="btn btn-danger fs-5 py-2 px-4" role="button" style="background: var(--bs-danger);border-style: none;color: var(--bs-primary);font-family: 'JEK 5';" href="https://www.youtube.com/watch?v=mNrJzKNBTmI" target="_blank">Youtube</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <section id="latest" class="user-select-none sec" style="padding-top: 100px;padding-bottom: 50px;">
         <div class="container">
             <div class="row">
                 <div class="col-md-12" style="padding-bottom: 40px;">
@@ -167,7 +203,7 @@
             </div>
             <hr>
             <div class="d-flex justify-content-between align-items-center pt-3" style="font-family: 'JEK 5';">
-                <p class="mb-0" style="font-family: 'JEK 5';color: var(--bs-primary);">Copyright © 2022 AoTTG2.net<br></p>
+                <p class="mb-0" style="font-family: 'JEK 5';color: var(--bs-primary);">©2022 AoTTG2.net<br></p>
                 <ul class="list-inline mb-0">
                     <li class="list-inline-item"><a href="https://www.facebook.com/AoTTG2/" style="color: var(--bs-primary);" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-facebook">
                                 <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"></path>
@@ -188,6 +224,7 @@
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/bs-init.js"></script>
+    <script src="assets/js/Audio-Player.js"></script>
     <script src="assets/js/Collapse-card.js"></script>
     <script src="assets/js/Collapse-Handler.js"></script>
     <script src="assets/js/dottedNavbar%20Function.js"></script>

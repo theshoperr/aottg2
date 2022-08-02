@@ -4,13 +4,16 @@ var $clicked = false;
 var $LastBtn;
 var $CurrentBtn;
 var $section;
+var x = window.matchMedia("(min-width: 1400px)")
 
 $section = document.getElementById('teams');
 
 $myGroup.on('show.bs.collapse','.collapse', function() {
     $myGroup.find('.collapse.show').collapse('hide');
     $clicked = true;
-    $section.style.background = 'linear-gradient(rgba(0,0,0,0.34), rgba(0,0,0,0.24) 99%), url("assets/img/Menu-cut-out.png") left / contain no-repeat, linear-gradient(rgba(0,0,0,0.58), rgba(0,0,0,0.6) 99%), url("assets/img/4.jpg") center / cover no-repeat'; 
+    
+    if(x.matches) $section.style.background = 'linear-gradient(rgba(0,0,0,0.34), rgba(0,0,0,0.24) 99%), url("assets/img/Menu-cut-out.png") left / contain no-repeat, linear-gradient(rgba(0,0,0,0.58), rgba(0,0,0,0.6) 99%), url("assets/img/4.jpg") center / cover no-repeat';
+    else $section.style.background = 'linear-gradient(rgba(0,0,0,0.34), rgba(0,0,0,0.24) 99%), url("assets/img/Menu-cut-out.png") left / cover no-repeat, linear-gradient(rgba(0,0,0,0.58), rgba(0,0,0,0.6) 99%), url("assets/img/4.jpg") center / cover no-repeat';
 });
 
 $myGroup.on('hide.bs.collapse','.collapse', function() {
