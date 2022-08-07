@@ -3,6 +3,8 @@ var $CollapseBtn = $('.cbtn');
 var $clicked = false;
 var $LastBtn;
 var $CurrentBtn;
+var $LastBtn2;
+var $CurrentBtn2;
 var $section;
 var x = window.matchMedia("(min-width: 1400px)")
 
@@ -44,25 +46,23 @@ $CollapseBtn.on('click', function() {
 
 $CollapseBtn.on('mouseenter', function(){
     
-    if ($CurrentBtn == null) $CurrentBtn = this;
-    else if($CurrentBtn != this) { $LastBtn = $CurrentBtn; $CurrentBtn = this; }
-    else { $CurrentBtn = this; $LastBtn = null; }
+    if ($CurrentBtn2 == null) $CurrentBtn2 = this;
+    else if($CurrentBtn2 != this) { $LastBtn2 = $CurrentBtn2; $CurrentBtn2 = this; }
+    else { $CurrentBtn2 = this; $LastBtn2 = null; }
     
     if(!$clicked) {
-        $CurrentBtn.style.background = 'url("assets/img/Red-selection-bigger.png") center / contain no-repeat';
-        $CurrentBtn.style.color = 'var(--bs-primary)';
+        $CurrentBtn2.style.background = 'url("assets/img/Red-selection-bigger.png") center / contain no-repeat';
+        $CurrentBtn2.style.color = 'var(--bs-primary)';
     }
-    
 });
 
 $CollapseBtn.on('mouseleave', function(){
-    if ($CurrentBtn == null) $CurrentBtn = this;
-    else if($CurrentBtn != this) { $LastBtn = $CurrentBtn; $CurrentBtn = this; }
-    else { $CurrentBtn = this; $LastBtn = null; }
+    if ($CurrentBtn2 == null) $CurrentBtn2 = this;
+    else if($CurrentBtn2 != this) { $LastBtn2 = $CurrentBtn2; $CurrentBtn2 = this; }
+    else { $CurrentBtn2 = this; $LastBtn2 = null; }
     
     if(!$clicked) {
-        $CurrentBtn.style.background = 'none';
-        $CurrentBtn.style.color = 'var(--bs-dark)';
+        $CurrentBtn2.style.background = 'none';
+        $CurrentBtn2.style.color = 'var(--bs-dark)';
     }
-    
 });
