@@ -18,6 +18,5 @@ document.addEventListener('mousemove', function(e){
 
 heading.addEventListener('mouseenter', function(){
     sfx.volume = 50 / 100;
-    sfx.play(); 
+    sfx.play();
 });
-
