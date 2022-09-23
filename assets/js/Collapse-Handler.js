@@ -1,5 +1,6 @@
 var $myGroup = $('#teams');
 var $CollapseBtn = $('.cbtn');
+var $china = $('.chinabtn');
 var $clicked = false;
 var $LastBtn;
 var $CurrentBtn;
@@ -14,7 +15,11 @@ $myGroup.on('show.bs.collapse','.collapse', function() {
     $myGroup.find('.collapse.show').collapse('hide');
     $clicked = true;
     
-    if(x.matches) $section.style.background = 'linear-gradient(rgba(0,0,0,0.34), rgba(0,0,0,0.24) 99%), url("assets/img/Menu-cut-out.png") left / contain no-repeat, linear-gradient(rgba(0,0,0,0.58), rgba(0,0,0,0.6) 99%), url("assets/img/4.jpg") center / cover no-repeat';
+    if(x.matches){
+        
+        if($CurrentBtn = $china) $section.style.background = 'linear-gradient(rgba(0,0,0,0.34), rgba(0,0,0,0.24) 99%), url("assets/img/Menu-cut-out.png") left / cover no-repeat, linear-gradient(rgba(0,0,0,0.58), rgba(0,0,0,0.6) 99%), url("assets/img/4.jpg") center / cover no-repeat';
+        else $section.style.background = 'linear-gradient(rgba(0,0,0,0.34), rgba(0,0,0,0.24) 99%), url("assets/img/Menu-cut-out.png") left / contain no-repeat, linear-gradient(rgba(0,0,0,0.58), rgba(0,0,0,0.6) 99%), url("assets/img/4.jpg") center / cover no-repeat';
+    }
     else $section.style.background = 'linear-gradient(rgba(0,0,0,0.34), rgba(0,0,0,0.24) 99%), url("assets/img/Menu-cut-out.png") left / cover no-repeat, linear-gradient(rgba(0,0,0,0.58), rgba(0,0,0,0.6) 99%), url("assets/img/4.jpg") center / cover no-repeat';
 });
 
