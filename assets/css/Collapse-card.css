@@ -4,7 +4,6 @@
 
 .rotate {
   -moz-transition: all .5s linear;
-  -webkit-transition: all .5s linear;
   transition: all .5s linear;
 }
 
