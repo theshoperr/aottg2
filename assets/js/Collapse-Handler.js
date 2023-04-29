@@ -11,7 +11,15 @@ var x = window.matchMedia("(min-width: 1400px)")
 
 $section = document.getElementById('teams');
 
-$myGroup.on('show.bs.collapse','.collapse', function() {
+$myGroup.on('show.bs.collapse', '.collapse', function() {
+    showModal('Development Team', 'dev-team.json');
+});
+
+$myGroup.on('hide.bs.collapse','.collapse', function() {
+    hideModal();
+});
+
+/*$myGroup.on('show.bs.collapse','.collapse', function() {
     $myGroup.find('.collapse.show').collapse('hide');
     $clicked = true;
     
@@ -19,14 +27,15 @@ $myGroup.on('show.bs.collapse','.collapse', function() {
         
         if($CurrentBtn = $china) $section.style.background = 'linear-gradient(rgba(0,0,0,0.34), rgba(0,0,0,0.24) 99%), url("assets/img/Menu-cut-out.png") left / cover no-repeat, linear-gradient(rgba(0,0,0,0.58), rgba(0,0,0,0.6) 99%), url("assets/img/4.jpg") center / cover no-repeat';
         /*else $section.style.background = 'linear-gradient(rgba(0,0,0,0.34), rgba(0,0,0,0.24) 99%), url("assets/img/Menu-cut-out.png") left / contain no-repeat, linear-gradient(rgba(0,0,0,0.58), rgba(0,0,0,0.6) 99%), url("assets/img/4.jpg") center / cover no-repeat';*/
-    }
+    //}
     /*else $section.style.background = 'linear-gradient(rgba(0,0,0,0.34), rgba(0,0,0,0.24) 99%), url("assets/img/Menu-cut-out.png") left / cover no-repeat, linear-gradient(rgba(0,0,0,0.58), rgba(0,0,0,0.6) 99%), url("assets/img/4.jpg") center / cover no-repeat';*/
-});
+//});*/
 
-$myGroup.on('hide.bs.collapse','.collapse', function() {
+/*$myGroup.on('hide.bs.collapse','.collapse', function() {
+    hideModal();
     $clicked = false;
     $section.style.background = 'linear-gradient(rgba(0,0,0,0.34), rgba(0,0,0,0.24) 99%), url("assets/img/Menu-cut-out.png") left / contain no-repeat, linear-gradient(rgba(0,0,0,0.58), rgba(0,0,0,0.6) 99%), url("assets/img/4.jpg") center / cover no-repeat';
-});
+});*/
 
 $CollapseBtn.on('click', function() {
 

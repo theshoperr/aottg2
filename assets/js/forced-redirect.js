@@ -1,3 +1,3 @@
 $(document).ready(function(){
-    window.location="./under-construction/index.html";
+    //window.location="./under-construction/index.html";
 })

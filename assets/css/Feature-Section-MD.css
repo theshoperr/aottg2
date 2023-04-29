@@ -3,6 +3,7 @@
 }
 
 .alert, .breadcrumb, .card, .card .card-header, .dropdown-menu, .file-custom, .input-group-addon, .jumbotron, .list-group .list-group-item, .modal-content, .nav .nav-link, .nav-tabs, .navbar, .navbar-toggler, .page-item:first-child .page-link, .page-item:last-child .page-link, .pagination-lg .page-item:first-child .page-link, .pagination-lg .page-item:last-child .page-link, .pagination-sm .page-item:first-child .page-link, .pagination-sm .page-item:last-child .page-link, .popover, .tag, .tooltip-inner, img {
+  -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
   -ms-border-radius: 0px;
   -o-border-radius: 0px;
@@ -17,6 +18,7 @@
   position: relative;
   cursor: pointer;
   overflow: hidden;
+  -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
